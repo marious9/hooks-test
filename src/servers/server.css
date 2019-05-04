@@ -1,0 +1,18 @@
+.server-container{
+    display: inline-flex;
+    padding: 5px;
+    margin: 5px;
+    word-wrap: break-word;
+    background: lightblue;
+    border-radius: 5px;
+}
+
+.server-container:hover {
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+.checked {
+    background-color: cornflowerblue;
+    color: white;
+}
