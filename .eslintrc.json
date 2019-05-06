@@ -20,5 +20,7 @@
         "sourceType": "module"
     },
     "rules": {
+        "semi": "error",
+        "no-trailing-spaces": "warn"
     }
 }

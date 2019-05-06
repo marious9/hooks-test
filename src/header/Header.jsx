@@ -4,9 +4,9 @@ import './header.css';
 const Header = () => {
     return (
         <div className='header'>
-            Performance Test
+            Hooks Test
         </div>
-    )
-}
+    );
+};
 
 export default Header;
