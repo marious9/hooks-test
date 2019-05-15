@@ -14,6 +14,7 @@ export const generateMockServers = () => {
         cpyServer.name = server.name + ` ${i}`;
         generatedFile.push(cpyServer);
     }
+    
     return generatedFile;
 };
 
