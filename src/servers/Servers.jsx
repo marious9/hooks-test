@@ -41,7 +41,7 @@ const Servers = () => {
                     <Server
                         key={server.id}
                         server={server}
-                        checkServer={() => checkOrUncheckServer(server.id)}
+                        checkOrUncheckServer={checkOrUncheckServer}
                         checked={checkedServers.some(id => id === server.id)} />
                 )}
             </div>

@@ -1,6 +1,7 @@
 import React, { useState, useFetch } from 'react';
 import { generateMockServers } from '../mock-data/generate-files';
 import VirtualizedItems from './VirtualizedItems';
+import Search from '../utils/search/Search';
 
 function Items() {
     const rowLimit = 5;    
@@ -33,9 +34,12 @@ function Items() {
     };
 
     return (
-        <VirtualizedItems
-            list={groupedItems()}
-        />
+        <div>
+            <VirtualizedItems
+                list={groupedItems()}
+            />
+            <Search list={items} />
+        </div>
     );
 }
 

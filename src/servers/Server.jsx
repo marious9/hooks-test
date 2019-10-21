@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './server.css';
 
-const Server = ({ server, checkServer, checked }) => {
+const Server = ({ server, checkOrUncheckServer, checked }) => {
     return (
-        <div className={`server-container ${checked && 'checked'}`} onClick={() => checkServer()}>
+        <div className={`server-container ${checked && 'checked'}`}>
             {server.name}
         </div>
     );
@@ -13,7 +13,7 @@ const Server = ({ server, checkServer, checked }) => {
 Server.propTypes = {
     props: PropTypes.object,
     server: PropTypes.object.isRequired,
-    checkServer: PropTypes.func,
+    // checkOrUncheckServer: PropTypes.func,
     checked: PropTypes.bool
 };
 
